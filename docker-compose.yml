@@ -7,10 +7,10 @@ services:
     environment:
         - CONFIG_MAIL_HOST=example@gmail.com
         - CONFIG_MAIL_PORT=123
-        - CONFIG_MAIL_SMTP_AUTH=${CONFIG_MAIL_SMTP_AUTH}
-        - CONFIG_MAIL_STARTTLS=${CONFIG_MAIL_STARTTLS}
-        - CONFIG_MAIL_USERNAME=${CONFIG_MAIL_USERNAME}
-        - CONFIG_MAIL_PASSWORD=${CONFIG_MAIL_PASSWORD}
+        - CONFIG_MAIL_SMTP_AUTH=TRUE
+        - CONFIG_MAIL_STARTTLS=TRUE
+        - CONFIG_MAIL_USERNAME=example
+        - CONFIG_MAIL_PASSWORD=passwd
     logging:
         options:
           max-size: "20m"
